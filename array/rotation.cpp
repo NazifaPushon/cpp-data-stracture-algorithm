@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-int rotate(int arr[], int d,int n){
+void rotate(int arr[], int d,int n){
         int temp[d];
         for(int i = 0;  i < d; i++){
             temp[i] = arr[i];
@@ -26,3 +26,10 @@ int rotate(int arr[], int d,int n){
             cout << arr[i] << endl;
         }
     }
+
+
+int main (){
+    int arr[7] = {1,2,3,4,5,6,7};
+    rotate(arr,3,7);
+    return 0;
+}
